@@ -12,5 +12,4 @@ public class IndexController {
     public String index() {
         return "<h1>Hello, World!!</h1>";
     }
-
 }
