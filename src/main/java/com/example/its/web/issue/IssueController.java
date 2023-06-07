@@ -21,7 +21,7 @@ public class IssueController {
             new IssueEntity(3, "概要3", "説明3")
 
         );
-        model.addAllAttribute(attributeName:"issueList",issueList);
+        model.addAllAttribute("issueList",issueList);
         return "issues/list";
     }
 
