@@ -2,7 +2,10 @@ package com.example.its.web.issue;
 
 import com.example.its.domainissue.IssueEntity;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
+//ビジネスロジック・アルゴリズム等が書かれた処理を提供する
+@Service
 public class IssueService {
 
     public List<IssueEntity> findAll() {
