@@ -1,4 +1,4 @@
-package com.example.its.web.issue;
+package com.example.its.domainissue;
 
 import com.example.its.domainissue.IssueEntity;
 import java.util.List;
