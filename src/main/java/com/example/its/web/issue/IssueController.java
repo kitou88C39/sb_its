@@ -1,6 +1,6 @@
 package com.example.its.web.issue;
 
-import com.example.its.web.issue.IssueService;
+//import com.example.its.web.issue.IssueService;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
