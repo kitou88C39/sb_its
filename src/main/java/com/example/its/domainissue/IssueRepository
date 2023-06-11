@@ -1,0 +1,9 @@
+package com.example.its.domainissue;
+
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface IssueRepository {
+    @Select("Select * from issue")
+    List<IssueEntity> findAll();
+}
