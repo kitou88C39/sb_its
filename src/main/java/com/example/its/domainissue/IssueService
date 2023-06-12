@@ -1,10 +1,12 @@
 package com.example.its.domainissue;
 
+import lombok.RequiredArgsConstructor;
 import com.example.its.domainissue.IssueEntity;
-import java.util.List;
 import org.springframework.stereotype.Service;
+import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class IssueService {
 
     praivate final IssueRepository IssueRepository;
