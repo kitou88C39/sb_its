@@ -4,9 +4,10 @@ import com.example.its.domainissue.IssueEntity;
 import java.util.List;
 import org.springframework.stereotype.Service;
 
-//ビジネスロジック・アルゴリズム等が書かれた処理を提供する
 @Service
 public class IssueService {
+
+    praivate final IssueRepository IssueRepository;
 
     public List<IssueEntity> findAll() {
         return List.of(
