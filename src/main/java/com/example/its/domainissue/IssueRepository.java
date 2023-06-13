@@ -5,7 +5,10 @@ import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface IssueRepository {
-    
+
     @Select("Select * from issues")
     List<IssueEntity> findAll();
+
+    @Insert("insert into issue(summary, description) values(#{summary},#{description})")
+    void insert(String summary, String description);
 }
