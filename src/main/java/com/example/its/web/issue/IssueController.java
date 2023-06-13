@@ -27,7 +27,7 @@ public class IssueController {
     }
 
     @PostMapping("creationForm")
-    public String create(Model model) {
+    public String create(IssueForm form, Model model) {
         return showList(model);
     }
 }
