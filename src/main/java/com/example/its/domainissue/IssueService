@@ -12,6 +12,6 @@ public class IssueService {
     praivate final IssueRepository IssueRepository;
 
     public List<IssueEntity> findAll() {
-        return IssueRepository.finalAll();
+        IssueRepository.insert(summary, description);
     }
 }
