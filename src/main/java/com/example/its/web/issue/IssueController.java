@@ -25,4 +25,9 @@ public class IssueController {
     public String showCreationForm() {
         return "issues/creationForm";
     }
+
+    @PostMapping("creationForm")
+    public String create(Model model) {
+        return showList(model);
+    }
 }
