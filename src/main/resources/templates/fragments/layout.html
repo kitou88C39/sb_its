@@ -6,14 +6,9 @@
 >
   <head>
     <meta charset="UTF-8" />
-    <title>課題詳細 | 課題管理アプリケーション</title>
+    <title th:replace="${title}">(default title)</title>
   </head>
   <body>
-    <h1>課題管理アプリケーション</h1>
-    <ul>
-      <li>
-        <a href="./issues/list.html" th:href="@{/issues}">一覧に戻る</a>
-      </li>
-    </ul>
+    <div th:insert="${content}">(default title)</div>
   </body>
 </html>
