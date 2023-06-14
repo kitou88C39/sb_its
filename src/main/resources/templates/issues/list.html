@@ -19,7 +19,14 @@
         <!-- Javaから渡された複数件のissueを１件ずつ取る -->
         <tr th:each="issue : ${issueList}">
           <th th:text="${issueList.id}">(id)</th>
-          <td th:text="${issueList}.summry">(summary)</td>
+          <td>
+            <a
+              href="./detail.html"
+              th:href="@{/issueList/{issueId}(issueId=${issue.id})}"
+              th:text="${issueList.summary}"
+              >(summary)
+            </a>
+          </td>
         </tr>
       </tbody>
     </table>
