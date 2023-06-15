@@ -21,8 +21,13 @@
           id="summaryInput"
           th:field="*{summary}"
           class="form-control"
+          th:classappend="${#fields.hasErrors('summary')} ? is-invalid"
         />
-        <p th:if="${#fields.hasErrors('summary')}" th:errors="*{summary}">
+        <p
+          class="invalid-feedback"
+          th:if="${#fields.hasErrors('summary')}"
+          th:errors="*{summary}"
+        >
           (error)
         </p>
       </div>
@@ -34,8 +39,10 @@
           row="10"
           th:field="*{description}"
           class="form-control"
+          is-invalid
         ></textarea>
         <p
+          class="invalid-feedback"
           th:if="${#fields.hasErrors('description')}"
           th:errors="*{description}"
         >
