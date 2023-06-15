@@ -15,19 +15,25 @@
       th:object="${issueForm}"
     >
       <div>
-        <label for="summaryInput">概要</label>
-        <input type="text" id="summaryInput" th:field="*{summary}" />
+        <label for="summaryInput" class="form-label">概要</label>
+        <input
+          type="text"
+          id="summaryInput"
+          th:field="*{summary}"
+          class="form-control"
+        />
         <p th:if="${#fields.hasErrors('summary')}" th:errors="*{summary}">
           (error)
         </p>
       </div>
       <div>
-        <label for="descriptionInput">説明</label>
+        <label for="descriptionInput" class="form-label">説明</label>
         <textarea
           type="text"
           id="descriptionInput"
           row="10"
           th:field="*{description}"
+          class="form-control"
         ></textarea>
         <p
           th:if="${#fields.hasErrors('description')}"
